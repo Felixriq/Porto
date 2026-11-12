@@ -1,20 +1,20 @@
 /* IDENTITAS & KONTAK */
 var SITE = {
-  name:  'Dwiky Jerryan Koryanto Muhammad',
-  email: 'dwikyjerryan311@gmail.com',
-  cv: 'Dokumen/CV.Iky.pdf',
+  name:  'Muhammad Thoriq Salahudin Haryoto',
+  email: 'thoriqharyoto@gmail.com',
+  cv: 'Dokumen/Dokumen/CV Muhamad Thoriq Salahudin Haryoto.pdf',
   foto: 'Dokumen/Profil.jpg',
   logo: 'DJ',
   kontakJudul: 'Mari mengerjakan sesuatu bersama.',
   kontakTeks:  'Terbuka untuk kolaborasi, proyek, dan kesempatan baru.',
   soc: [
-    ['GitHub',    'https://github.com/Danlions'],
-    ['LinkedIn',  'https://www.linkedin.com/in/dwiky-jerryan-koryanto-muhammad/'],
-    ['Instagram', 'https://instagram.com/kazikvy']
+    ['GitHub',    'https://github.com/Felixriq'],
+    ['LinkedIn',  'https://www.linkedin.com/in/muhammad-thoriq-salahudin-haryoto/'],
+    ['Instagram', 'https://instagram.com/thoriqharyoto_']
   ]
 };
 
-var GH = 'https://github.com/Danlions';
+var GH = 'https://github.com/Felixriq';
 var P = [
    {
       t:'Aplikasi BMR BMI', 
@@ -139,8 +139,6 @@ var CERTS = [
   {k:'Panitia', t:'Trisula Suaka 2025', s:'Panitia Trisula Suaka', y:'2025', f:'Trisula Suaka.pdf'},
 
   /* Workshop */
-  {k:'Workshop', t:'AI Class ASEAN', s:'Asean Foundation', y:'2026', f:'Ai_Class_Assean.pdf'},
-  {k:'Workshop', t:'AI Foward', s:'Alibaba Cloud', y:'2025', f:'Alibaba.pdf'},
   {k:'Workshop', t:'TOEFL Prediction Test', s:'Central Course', y:'2026', f:'Dwiky Jerryan Koryanto Muhammad-sshj.pdf'},
   {k:'Workshop', t:'PPSDM', s:'PPSDM', y:'2025', f:'Sert - PPSDM - Dwiky Jerryan Koryanto Muhammad.pdf'},
   {k:'Workshop', t:'SIC6 Stage 1', s:'Samsung Innovation Campus', y:'2024-2025', f:'Sertifikat SIC6 Stage 1.pdf'},
@@ -153,6 +151,6 @@ var INFO = [
   {l:'PROGRAM STUDI', v:['Mekatronika & Kecerdasan Buatan']},
   {l:'KAMPUS', v:['Universitas Pendidikan Indonesia']},
   {l:'SEMESTER', v:['5 (Lima)']},
-  {l:'FOKUS', v:['Robotika, IoT,','Desain interaksi, Editting']},
-  {l:'KOTA', v:['Bogor']}
+  {l:'FOKUS', v:['Robotika, IoT,','Desain interaksi']},
+  {l:'KOTA', v:['Jakarta Pusat']}
 ];
