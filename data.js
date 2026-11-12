@@ -141,16 +141,14 @@ var CERTS = [
   /* Workshop */
   {k:'Workshop', t:'TOEFL Prediction Test', s:'Central Course', y:'2026', f:'Dwiky Jerryan Koryanto Muhammad-sshj.pdf'},
   {k:'Workshop', t:'PPSDM', s:'PPSDM', y:'2025', f:'Sert - PPSDM - Dwiky Jerryan Koryanto Muhammad.pdf'},
-  {k:'Workshop', t:'SIC6 Stage 1', s:'Samsung Innovation Campus', y:'2024-2025', f:'Sertifikat SIC6 Stage 1.pdf'},
-  {k:'Workshop', t:'Workshop Matematika', s:'Fakultas Sains dan Matematika Universitas Diponegoro', y:'2025', f:'Workshop Matematika.pdf'}
 ];
 
 /* ISI PAPAN TULIS DOBOT */
 var INFO = [
   {l:'NAMA', v:[SITE.name]},
-  {l:'PROGRAM STUDI', v:['Mekatronika & Kecerdasan Buatan']},
+  {l:'PROGRAM STUDI', v:['Mechatronics & Artificial Intelligence']},
   {l:'KAMPUS', v:['Universitas Pendidikan Indonesia']},
-  {l:'SEMESTER', v:['5 (Lima)']},
-  {l:'FOKUS', v:['Robotika, IoT,','Desain interaksi']},
+  {l:'SEMESTER', v:['5 (Five)']},
+  {l:'FOKUS', v:['Robotics, IoT, Interaction design']},
   {l:'KOTA', v:['Jakarta Pusat']}
 ];
