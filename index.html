@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0D1015">
+<title>Dwiky Jerryan Koryanto Muhammad | Portofolio Mekatronika & Kecerdasan Buatan</title>
+<meta name="description" content="Portofolio pribadi mahasiswa Mekatronika dan Kecerdasan Buatan: robotika, IoT, sistem tertanam, dan desain interaksi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body data-page="home" data-title="Portofolio Mekatronika & Kecerdasan Buatan">
+<div class="gridlit" id="gridlit" aria-hidden="true"></div>
+<div class="glow" id="glow" aria-hidden="true"></div>
+
+<nav class="nav" id="nav"></nav>
+
+<main>
+  <header class="wrap hero" id="top">
+    <div>
+      <span class="mono">Lembar 00 | Tentang</span>
+      <h1 id="hName">[Nama Kamu]</h1>
+      <p class="tag">Mahasiswa Mekatronika & Kecerdasan Buatan yang suka merancang, dari hardware hingga software.</p>
+      <p class="d">Saya mengerjakan proyek robotika, IoT, sistem tertanam, desain interaksi, dan juga editing. Bagi saya, sebuah rancangan dikatakan sempurna jika berfungsi dengan baik dan tampilannya menarik.</p>
+      <p class="d">Saat ini saya sedang mempelajari lebih lanjut tentang teknologi LoRa Mesh, proyek IoT, dan desain AI.</p>
+      <div class="btns">
+        <a class="b w" href="proyek.html">Lihat proyek</a>
+        <a class="b o" href="#kontak">Kontak</a>
+        <a class="b o" id="cvBtn" href="#" hidden>Unduh CV</a>
+      </div>
+    </div>
+    <div class="frame">
+      <!-- Foto: simpan sebagai foto.jpg -->
+      <div class="pic">NK</div>
+      <span class="dim t">4 : 5</span>
+    </div>
+  </header>
+  <dl class="sr" id="info" aria-label="Ringkasan profil"></dl>
+
+  <section class="wrap" id="demo" style="padding-top:0">
+    <div class="sh">
+      <div><span class="mono">Lembar 01 | Demo</span><h2>Ilustrasi Dobot</h2>
+      <p class="sub">Ilustrasi Dobot dengan kode program yang berjalan</p></div>
+      <div class="acts">
+        <button class="b o" type="button" data-m="write">Putar ulang</button>
+      </div>
+    </div>
+    <div class="demo">
+      <div class="scene">
+        <svg id="sc" viewBox="0 -32 640 372" role="img" aria-label="Animasi Dobot putih-biru di bagian atas yang menurunkan pena dan menulis ringkasan profil pada papan berisi enam kotak">
+          <defs id="df"><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="rgba(255,255,255,.08)"/></pattern><linearGradient id="bw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D9E4F8"/></linearGradient><linearGradient id="aw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE6F8"/></linearGradient></defs>
+          <rect y="-32" width="640" height="332" fill="url(#dots)"/>
+          <rect y="300" width="640" height="40" fill="#1B212B"/>
+          <line x1="0" y1="300" x2="640" y2="300" stroke="rgba(255,255,255,.28)"/>
+          <!-- papan 3 x 2 -->
+          <rect x="24" y="124" width="592" height="176" rx="8" fill="#F6F9FF" stroke="#CFE0FF" stroke-width="2"/>
+          <path d="M221.3 130V294M418.7 130V294M30 212H610" stroke="#C3D1EC" stroke-width="1.5" fill="none"/>
+          <g id="board"></g>
+          <!-- Dobot -->
+          <rect x="14" y="-6" width="612" height="8" rx="4" fill="#2A3140" stroke="rgba(255,255,255,.18)"/>
+          <g id="bd">
+            <rect x="-60" y="2" width="120" height="10" rx="3" fill="#1B1F2A"/>
+            <rect x="-62" y="10" width="124" height="44" rx="9" fill="url(#bw)" stroke="#BFD5FF" stroke-width="1.5"/>
+            <rect x="-62" y="44" width="124" height="3" fill="#2F6BFF" opacity=".85"/>
+            <circle cx="0" cy="27" r="4" fill="#4FB9FF"/><circle cx="0" cy="27" r="9" fill="#4FB9FF" opacity=".22"/>
+            <path d="M-26 54 H26 V66 Q26 74 18 74 H-18 Q-26 74 -26 66 Z" fill="#E6EEFF" stroke="#BFD5FF" stroke-width="1.5"/>
+          </g>
+          <g id="arm">
+            <line id="a1o" stroke="#AFC4EE" stroke-width="28" stroke-linecap="round"/>
+            <line id="a1w" stroke="url(#aw)" stroke-width="24" stroke-linecap="round"/>
+            <line id="a1k" stroke="#1B1F2A" stroke-width="9" stroke-linecap="round"/>
+            <line id="a2o" stroke="#AFC4EE" stroke-width="26" stroke-linecap="round"/>
+            <line id="a2w" stroke="url(#aw)" stroke-width="22" stroke-linecap="round"/>
+            <line id="a2k" stroke="#1B1F2A" stroke-width="8" stroke-linecap="round"/>
+            <g id="h0"><circle r="15" fill="#1B1F2A" stroke="#F4F8FF" stroke-width="3"/><circle r="5" fill="#2F6BFF"/></g>
+            <g id="h1"><circle r="13" fill="#1B1F2A" stroke="#F4F8FF" stroke-width="3"/><circle r="4.5" fill="#2F6BFF"/></g>
+          </g>
+          <g id="tl">
+            <circle r="9" fill="#1B1F2A" stroke="#F4F8FF" stroke-width="2.5"/>
+            <rect x="-8" y="6" width="16" height="9" rx="2.5" fill="#1B1F2A"/>
+            <rect x="-5" y="13" width="10" height="3" fill="#F4F8FF"/>
+            <line x1="0" y1="15" x2="0" y2="19" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+            <path d="M-3 19 L3 19 L0 26 Z" fill="#12307F"/>
+          </g>
+        </svg>
+      </div>
+      <div class="win">
+        <div class="wh"><i></i><i></i><i></i><span id="fn">dobot_tulis.py</span></div>
+        <pre class="src" id="src" aria-label="Contoh program Dobot"></pre>
+        <div class="logh">TERMINAL</div>
+        <div class="log" id="lg"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="jelajah">
+    <span class="mono">Jelajahi</span>
+    <h2 style="margin-bottom:24px">Lihat lebih lanjut</h2>
+    <div class="tzs" id="tz"></div>
+  </section>
+</main>
+
+<div class="band" id="kontak"></div>
+<footer id="foot"></footer>
+
+<div class="xy" id="xy">X 0000  Y 0000</div>
+
+<script src="data.js?v=3"></script>
+<script src="app.js?v=4"></script>
+</body>
+</html>
