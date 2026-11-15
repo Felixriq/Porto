@@ -4,7 +4,7 @@ var SITE = {
   email: 'thoriqharyoto@gmail.com',
   cv: 'Dokumen/Dokumen/CV Muhamad Thoriq Salahudin Haryoto.pdf',
   foto: 'Dokumen/Profil.jpg',
-  logo: 'DJ',
+  logo: 'MT',
   kontakJudul: 'Mari mengerjakan sesuatu bersama.',
   kontakTeks:  'Terbuka untuk kolaborasi, proyek, dan kesempatan baru.',
   soc: [
@@ -13,142 +13,94 @@ var SITE = {
     ['Instagram', 'https://instagram.com/thoriqharyoto_']
   ]
 };
-
-var GH = 'https://github.com/Felixriq';
-var P = [
-   {
-      t:'Aplikasi BMR BMI', 
-      s:'Aplikasi Terminal', 
-      c:'Pemrograman Bahasa C', 
-      k:'GitHub', 
-      img:'Proyek/Aplikasi BMR BMI.png',
-      d:'Aplikasi Gizi yang menghitung BMR dan BMI berbasis terminal dengan bahasa C.',
-      l:[['GitHub', 'https://github.com/Danlions/Aplikasi_BMR_BMI']]},
-   {
-      t:'Arm Manipulator', 
-      s:'Prototipe Hardware', 
-      c:'Hidrolik', 
-      k:'Google Drive', 
-      img:'Proyek/Arm Manipulator.png',
-      d:'Proyek Arm Manipulator yang bergerak dengan tenaga kerja hidrolik.',
-      l:[['Google Drive','https://drive.google.com/file/d/1UguEo3sYAD_Tot8RvDvcMIK8npNTgNe_/view?usp=drive_link']]},
-   {
-      t:'Gerbang Logika', 
-      s:'Dokumentasi Praktikum', 
-      c:'Sistem Digital', 
-      k:'Google Drive', 
-      img:'Proyek/Sistem Digital.png',
-      d:'Mengimplementasikan cara kerja dari bermacam-macam gerbang logika dengan Decoder dan Encoder.',
-      l:[['Google Drive','https://drive.google.com/file/d/1CeRb-HbjCBvEv0oFfq2O6peWsMQSXubM/view?usp=drive_link']]},
-   {
-      t:'Steam Kendaraan', 
-      s:'Aplikasi Dekstop', 
-      c:'Pemrograman Bahasa Java', 
-      k:'GitHub', 
-      img:'Proyek/Steam Kendaraan.png',
-      d:'Proyek aplikasi Steam Kendaraan menggunakan netbeans dan pembuatan ui scene builder serta terintegrasi dengan database MySQL dengan bahasa Java.',
-      l:[['GitHub', 'https://github.com/Danlions/SteamKendaraan']]},
-   {
-      t:'Sampah Pintar', 
-      s:'Prototipe Hardware', 
-      c:'Sensor dan Sistem Tertanam', 
-      k:'Google Drive', 
-      img:'Proyek/Smart Trash Bin.png',
-      d:'Proyek prototipe tempat sampah pintar dengan sensor ultrasonik sebagai tanda sampah penuh dan sensor MQ-135 sebagai tanda kebusukan sampah.',
-      l:[['Google Drive','https://drive.google.com/drive/folders/1gWlqXRRsQeG_LsKE_dB8E441iou95GrS?usp=drive_link']]},
-   {
-      t:'Stairpoint', 
-      s:'Prototipe Hardware + Software', 
-      c:'Desain Interaksi', 
-      k:'Google Drive + Figma',
-      img:'Proyek/Stairpoint.png',
-      d:'Proyek prototipe Stairpoint yang terdiri dari sistem scan rfid dengan desain aplikasi android, alat ini memotivasi pengguna untuk lebih menggunakan tangga untuk tujuan kesehatan dengan sistem poin yang bisa ditukar dengan benefit di dalam aplikasi Stairpoint.',
-      l:[['Google Drive','https://drive.google.com/drive/folders/1mOqLdpstIWoZsfKHevWyLIrnGOa_aq86?usp=sharing'],['Figma','https://www.figma.com/design/ksEbT7dhCwe58sz4lYnQcZ/Untitled?node-id=0-1&p=f']]},
-   {
-      t:'Simulasi Conveyor Sorting', 
-      s:'Wokwii + Firebase', 
-      c:'Internet Of Things', 
-      k:'Google Drive + Youtube', 
-      img:'Proyek/Conveyor Sorting.png',
-      d:'Proyek simulasi IoT di Wokwi yang terintegrasi dengan database Firebase, simulasi ini mendeteksi gangguan pada sensor, barang yang macet dan situasi darurat.',
-      l:[['Google Drive', 'https://drive.google.com/drive/folders/1AkAfrnCVk52F6jVmTkJFe8bezaL5ry-T?usp=sharing'],['Youtube','https://youtu.be/EnWbhDzTwLU?si=0SNzQVF6LQO50RB0']]},
-   {
-      t:'Dobot Arm Manipulator', 
-      s:'Program dan Logika', 
-      c:'Robotika', 
-      k:'Google Drive', 
-      img:'Proyek/Dobot.png',
-      d:'Praktikum menjalankan dengan program dan logika dari aplikasi dobot lab untuk menggerakkan robot dobot dengan blockly dan manual training.',
-      l:[['Google Drive','https://drive.google.com/drive/folders/1sG-1Ixx9NI4PMLl-JJmxsFfLUXx6CqeA?usp=sharing']]}
-];
-
-/* SKILL SOFTWARE */
-var SKILLS = [
-  /* Desain & Grafis */
-  {k:'Desain & Grafis', n:'Figma', d:'Desain antarmuka', i:'figma', m:'Fg'},
-  {k:'Desain & Grafis', n:'Canva', d:'Desain grafis', i:'canva', m:'Cv'},
-  {k:'Desain & Grafis', n:'AutoCAD', d:'Gambar teknik 2D dan 3D', i:'autocad', m:'AC'},
-  {k:'Desain & Grafis', n:'SketchUp', d:'Pemodelan 3D', i:'sketchup', m:'SU'},
-
-  /* Pengeditan Video & Kreatif */
-  {k:'Pengeditan Video & Kreatif', n:'Adobe Premiere Pro', d:'Editing video profesional', i:'premiere', m:'Pr'},
-  {k:'Pengeditan Video & Kreatif', n:'CapCut', d:'Editing video', i:'capcut', m:'Cc'},
-  {k:'Pengeditan Video & Kreatif', n:'OBS Studio', d:'Rekaman dan streaming', i:'obs', m:'OBS'},
-
-  /* Aplikasi Produktivitas */
-  {k:'Aplikasi Produktivitas', n:'Microsoft Excel', d:'Pengolahan data', i:'excel', m:'Xl'},
-  {k:'Aplikasi Produktivitas', n:'Microsoft Word', d:'Dokumen dan laporan', i:'word', m:'Wd'},
-  {k:'Aplikasi Produktivitas', n:'Microsoft PowerPoint', d:'Presentasi', i:'powerpoint', m:'Pp'},
-
-  /* Pemrograman & Perangkat Keras */
-  {k:'Pemrograman & Perangkat Keras', n:'Visual Studio Code (VS Code)', d:'Editor kode', i:'vscode', m:'VS'},
-  {k:'Pemrograman & Perangkat Keras', n:'Arduino IDE', d:'Pemrograman mikrokontroler', i:'arduino', m:'Ar'},
-  {k:'Pemrograman & Perangkat Keras', n:'Python', d:'Bahasa pemrograman', i:'python', m:'Py'},
-  {k:'Pemrograman & Perangkat Keras', n:'C / C++', d:'Bahasa pemrograman', i:'cplusplus', m:'C+'},
-  {k:'Pemrograman & Perangkat Keras', n:'Wokwi', d:'Simulasi IoT', i:'wokwi', m:'Wk'},
-  {k:'Pemrograman & Perangkat Keras', n:'Firebase', d:'Backend dan database', i:'firebase', m:'Fb'},
-  {k:'Pemrograman & Perangkat Keras', n:'Git & GitHub', d:'Version control', i:'git', m:'Git'}
-];
-
 var CERTS = [
-  /* Cognitive Class AI */
-  {k:'Cognitive Class AI', t:'A Quick Introduction to Machine Learning', s:'Cognitive Class (IBM)', y:'2026', f:'A Quick Introduction to Machine Learning.pdf'},
-  {k:'Cognitive Class AI', t:'Classification Methods: Problems and Solutions', s:'Cognitive Class (IBM)', y:'2026', f:'Classification Methods Problems and Solutions.pdf'},
-  {k:'Cognitive Class AI', t:'Customer Clustering with KMeans', s:'Cognitive Class (IBM)', y:'2026', f:'Customer Clustering with KMeans to Boost Business Strategy.pdf'},
-  {k:'Cognitive Class AI', t:'Data Analysis with Python', s:'Cognitive Class (IBM)', y:'2026', f:'Data Analysis with Python.pdf'},
-  {k:'Cognitive Class AI', t:'Learning with Python', s:'Cognitive Class (IBM)', y:'2026', f:'Learning with Python.pdf'},
-  {k:'Cognitive Class AI', t:'Machine Learning Basics', s:'Cognitive Class (IBM)', y:'2026', f:'Machine Learning Basics.pdf'},
-  {k:'Cognitive Class AI', t:'Precise Predictions: Classification for Flowers', s:'Cognitive Class (IBM)', y:'2026', f:'Precise Predictions Classification for Flower and Tumors.pdf'},
-  {k:'Cognitive Class AI', t:'Predictions: Regression for Car Mileage', s:'Cognitive Class (IBM)', y:'2026', f:'Predictions Regression for Car Mileage and Diamond Price.pdf'},
-  {k:'Cognitive Class AI', t:'Python 101 for Data Science', s:'Cognitive Class (IBM)', y:'2026', f:'Python 101 for Data Science.pdf'},
-  {k:'Cognitive Class AI', t:'SQL and Relational Databases 101', s:'Cognitive Class (IBM)', y:'2025', f:'SQL and Relational Databases 101.pdf'},
+  /* Cognitive Class AI - 8 Sertifikat yang Dilampirkan */
+  {
+    k: 'Cognitive Class AI',
+    t: 'Machine Learning Basics (Learning Path)',
+    c: 'LEARNING PATH',
+    s: 'Cognitive Class · IBM Skills Network',
+    y: '6 Nov 2026',
+    f: 'Machine Learning Basics.pdf',
+    u: 'https://cognitiveclass.ai/certificates/3e57a30f-4acb-4cdb-b977-d33cbba11aa7',
+    featured: true
+  },
+  {
+    k: 'Cognitive Class AI',
+    t: 'A Quick Introduction to Machine Learning',
+    c: 'ML0104EN',
+    s: 'Cognitive Class · IBM Skills Network',
+    y: '6 Nov 2026',
+    f: 'A quick introduction to machine learning.pdf',
+    u: 'https://courses.cognitiveclass.ai/certificates/ccb9a800cddf4a478fbdf8de212f0926'
+  },
+  {
+    k: 'Cognitive Class AI',
+    t: 'Precise Predictions: Classification for Flower and Tumors',
+    c: 'GPXX0TRPEN',
+    s: 'Cognitive Class · IBM Skills Network',
+    y: '6 Nov 2026',
+    f: 'Classification for flower and Tumors.pdf',
+    u: 'https://courses.cognitiveclass.ai/certificates/93b0fe1b6db4417fa4ed88a4746a21f5'
+  },
+  {
+    k: 'Cognitive Class AI',
+    t: 'Customer Clustering with KMeans to Boost Business Strategy',
+    c: 'GPXX0MYYEN',
+    s: 'Cognitive Class · IBM Skills Network',
+    y: '6 Nov 2026',
+    f: 'Customer Clustering with Kmeans to Boost Business Straregy.pdf',
+    u: 'https://courses.cognitiveclass.ai/certificates/470b16bde4f4477089d75253700c97b7'
+  },
+  {
+    k: 'Cognitive Class AI',
+    t: 'Predictions: Regression for Car Mileage and Diamond Price',
+    c: 'GPXX0AEIEN',
+    s: 'Cognitive Class · IBM Skills Network',
+    y: '6 Nov 2026',
+    f: 'Regression For Car Mileage and Diamond Price.pdf',
+    u: 'https://courses.cognitiveclass.ai/certificates/8e766ddf32274e678fb8a6a37c9047b6'
+  },
+  {
+    k: 'Cognitive Class AI',
+    t: 'Data Analysis with Python',
+    c: 'DA0101EN',
+    s: 'IBM · Cognitive Class',
+    y: '6 Nov 2026',
+    f: 'Data Analysis With Python.pdf',
+    u: 'https://courses.cognitiveclass.ai/certificates/19f9030bcb3f4268b8b04fdb0ab2cc50'
+  },
+  {
+    k: 'Cognitive Class AI',
+    t: 'Machine Learning with Python',
+    c: 'ML0101EN',
+    s: 'IBM · Cognitive Class',
+    y: '2 Nov 2026',
+    f: 'Machine Learning with Python.pdf',
+    u: 'https://courses.cognitiveclass.ai/certificates/2d2edeb5983d407a912c613e279c8b01'
+  },
+  {
+    k: 'Cognitive Class AI',
+    t: 'Python 101 for Data Science',
+    c: 'PY0101EN',
+    s: 'IBM · Cognitive Class',
+    y: '2 Nov 2026',
+    f: 'Python 101 For Data Science.pdf',
+    u: 'https://courses.cognitiveclass.ai/certificates/5a95582dbaa147f3a17ce4005f78d614'
+  },
 
   /* IBM SkillsBuild */
-  {k:'IBM SkillsBuild', t:'AI Introduction', s:'IBM SkillsBuild', y:'2025', f:'AI Introduction_Completion Certificate_SkillsBuild.pdf'},
-  {k:'IBM SkillsBuild', t:'IBM SkillsBuild Completion Certificate', s:'IBM SkillsBuild', y:'2025', f:'Completion Certificate _ SkillsBuild.pdf'},
-  {k:'IBM SkillsBuild', t:'Getting Started with AI', s:'IBM SkillsBuild', y:'2025', f:'Getting Started Ai_Completion Certificate_SkillsBuild.pdf'},
-  {k:'IBM SkillsBuild', t:'IBM Granite Models', s:'IBM SkillsBuild', y:'2025', f:'IBM Granite Models_SkillsBuild.pdf'},
-  {k:'IBM SkillsBuild', t:'IBM Granite', s:'IBM SkillsBuild', y:'2025', f:'IBM Granite_Completion Certificate _ SkillsBuild.pdf'},
-  {k:'IBM SkillsBuild', t:'IBM Design', s:'IBM SkillsBuild / Credly', y:'2025', f:'IBMDesign_Credly.pdf'},
-  {k:'IBM SkillsBuild', t:'Code Generation and Optimization', s:'IBM SkillsBuild', y:'2025', f:'Sertifikat Code Generation and Optimization - Wave 3.pdf'},
-  {k:'IBM SkillsBuild', t:'Use Generative AI', s:'IBM SkillsBuild', y:'2025', f:'Use Generative AI_SkillsBuild.pdf'},
+  {k:'IBM SkillsBuild', t:'AI Introduction', c:'SKILLSBUILD', s:'IBM SkillsBuild', y:'2025', f:'AI Introduction_Completion Certificate_SkillsBuild.pdf'},
+  {k:'IBM SkillsBuild', t:'IBM SkillsBuild Completion Certificate', c:'SKILLSBUILD', s:'IBM SkillsBuild', y:'2025', f:'Completion Certificate _ SkillsBuild.pdf'},
+  {k:'IBM SkillsBuild', t:'Getting Started with AI', c:'SKILLSBUILD', s:'IBM SkillsBuild', y:'2025', f:'Getting Started Ai_Completion Certificate_SkillsBuild.pdf'},
+  {k:'IBM SkillsBuild', t:'IBM Granite Models', c:'GRANITE', s:'IBM SkillsBuild', y:'2025', f:'IBM Granite Models_SkillsBuild.pdf'},
+  {k:'IBM SkillsBuild', t:'IBM Granite', c:'GRANITE', s:'IBM SkillsBuild', y:'2025', f:'IBM Granite_Completion Certificate _ SkillsBuild.pdf'},
+  {k:'IBM SkillsBuild', t:'IBM Design', c:'CREDLY', s:'IBM SkillsBuild / Credly', y:'2025', f:'IBMDesign_Credly.pdf'},
+  {k:'IBM SkillsBuild', t:'Code Generation and Optimization', c:'WAVE 3', s:'IBM SkillsBuild', y:'2025', f:'Sertifikat Code Generation and Optimization - Wave 3.pdf'},
+  {k:'IBM SkillsBuild', t:'Use Generative AI', c:'GEN AI', s:'IBM SkillsBuild', y:'2025', f:'Use Generative AI_SkillsBuild.pdf'},
 
   /* Panitia */
-  {k:'Panitia', t:'Isola Sport Fest 2025', s:'Panitia ISF', y:'2025', f:'Isola Sport Fest.pdf'},
-  {k:'Panitia', t:'Metastro 2025', s:'Panitia Mestastro', y:'2025', f:'Metastro 2025.pdf'},
-  {k:'Panitia', t:'Trisula Suaka 2025', s:'Panitia Trisula Suaka', y:'2025', f:'Trisula Suaka.pdf'},
-
-  /* Workshop */
-  {k:'Workshop', t:'TOEFL Prediction Test', s:'Central Course', y:'2026', f:'Dwiky Jerryan Koryanto Muhammad-sshj.pdf'},
-  {k:'Workshop', t:'PPSDM', s:'PPSDM', y:'2025', f:'Sert - PPSDM - Dwiky Jerryan Koryanto Muhammad.pdf'},
-];
-
-/* ISI PAPAN TULIS DOBOT */
-var INFO = [
-  {l:'NAMA', v:[SITE.name]},
-  {l:'PROGRAM STUDI', v:['Mechatronics & Artificial Intelligence']},
-  {l:'KAMPUS', v:['Universitas Pendidikan Indonesia']},
-  {l:'SEMESTER', v:['5 (Five)']},
-  {l:'FOKUS', v:['Robotics, IoT, Interaction design']},
-  {l:'KOTA', v:['Jakarta Pusat']}
+  {k:'Panitia', t:'Isola Sport Fest 2025', c:'KEPANITIAAN', s:'Panitia ISF', y:'2025', f:'Isola Sport Fest.pdf'},
+  {k:'Panitia', t:'Metastro 2025', c:'KEPANITIAAN', s:'Panitia Metastro', y:'2025', f:'Metastro 2025.pdf'},
+  {k:'Panitia', t:'Trisula Suaka 2025', c:'KEPANITIAAN', s:'Panitia Trisula Suaka', y:'2025', f:'Trisula Suaka.pdf'}
 ];
