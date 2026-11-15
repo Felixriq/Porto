@@ -1,37 +1,360 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0D1015">
-<title>Sertifikat | Muhammad Thoriq Salahudin Haryoto</title>
-<meta name="description" content="Portofolio pribadi mahasiswa Mekatronika dan Kecerdasan Buatan: robotika, IoT, sistem tertanam, dan desain interaksi.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikasi | Muhammad Thoriq Salahudin Haryoto</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0B0F19',
+                        card: '#111827',
+                        accent: '#3B82F6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0B0F19;
+            color: #F9FAFB;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.12) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.12) 0px, transparent 50%);
+            background-attachment: fixed;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(59, 130, 246, 0.4);
+            box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.2);
+        }
+        .featured-badge {
+            background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+        }
+    </style>
 </head>
-<body data-page="sertifikat" data-title="Sertifikat">
-<div class="gridlit" id="gridlit" aria-hidden="true"></div>
-<div class="glow" id="glow" aria-hidden="true"></div>
+<body class="min-h-screen flex flex-col justify-between">
 
-<nav class="nav" id="nav"></nav>
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#0B0F19]/80 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 font-bold text-lg group-hover:bg-blue-600 group-hover:text-white transition-all">
+                    MT
+                </div>
+                <div>
+                    <span class="font-bold text-white tracking-tight block leading-none">Muhammad Thoriq</span>
+                    <span class="text-xs text-gray-400">Portfolio & Credentials</span>
+                </div>
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="index.html" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">Beranda</a>
+                <a href="sertifikasi.html" class="text-sm font-semibold text-blue-400 border-b-2 border-blue-500 pb-1">Sertifikasi</a>
+                <a href="https://github.com/Felixriq/Porto" target="_blank" class="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-sm font-medium flex items-center gap-2 transition-all">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
 
-<main>
-  <section class="wrap pg">
-    <span class="mono">Lembar 04 | Kredensial</span>
-    <h2 style="margin-bottom:24px">Sertifikat</h2>
-    <div class="filt" id="filt" role="tablist" aria-label="Filter sertifikat"></div>
-    <div class="certs" id="certs"></div>
-  </section>
-</main>
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow w-full">
+        
+        <!-- Header Section -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                <i class="fas fa-certificate"></i> Verified Credentials
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
+                Lisensi & Sertifikasi
+            </h1>
+            <p class="text-gray-400 text-base sm:text-lg leading-relaxed">
+                Kumpulan sertifikasi kompetensi resmi di bidang <span class="text-gray-200 font-medium">Machine Learning</span>, <span class="text-gray-200 font-medium">Data Science</span>, dan <span class="text-gray-200 font-medium">Python</span> oleh IBM Developer Skills Network & Cognitive Class.
+            </p>
+        </div>
 
-<div class="band" id="kontak"></div>
-<footer id="foot"></footer>
+        <!-- Stats Summary -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+            <div class="glass-card rounded-2xl p-5 text-center">
+                <span class="text-3xl font-extrabold text-white block">8</span>
+                <span class="text-xs text-gray-400 uppercase tracking-wider mt-1 block">Total Sertifikat</span>
+            </div>
+            <div class="glass-card rounded-2xl p-5 text-center">
+                <span class="text-3xl font-extrabold text-blue-400 block">1</span>
+                <span class="text-xs text-gray-400 uppercase tracking-wider mt-1 block">Learning Path</span>
+            </div>
+            <div class="glass-card rounded-2xl p-5 text-center">
+                <span class="text-3xl font-extrabold text-purple-400 block">IBM</span>
+                <span class="text-xs text-gray-400 uppercase tracking-wider mt-1 block">Penerbit Utama</span>
+            </div>
+            <div class="glass-card rounded-2xl p-5 text-center">
+                <span class="text-3xl font-extrabold text-emerald-400 block">2026</span>
+                <span class="text-xs text-gray-400 uppercase tracking-wider mt-1 block">Tahun Terbaru</span>
+            </div>
+        </div>
 
-<div class="xy" id="xy">X 0000  Y 0000</div>
+        <!-- Filter & Search Bar -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8">
+            <div class="flex flex-wrap items-center gap-2 w-full sm:w-auto" id="filter-buttons">
+                <button onclick="filterCerts('all')" class="filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-blue-600 text-white transition-all" data-filter="all">
+                    Semua (8)
+                </button>
+                <button onclick="filterCerts('Learning Path')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10 transition-all" data-filter="Learning Path">
+                    Learning Path (1)
+                </button>
+                <button onclick="filterCerts('Machine Learning')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10 transition-all" data-filter="Machine Learning">
+                    Machine Learning (5)
+                </button>
+                <button onclick="filterCerts('Data Science')" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10 transition-all" data-filter="Data Science">
+                    Data Science & Python (2)
+                </button>
+            </div>
 
-<script src="data.js"></script>
-<script src="app.js"></script>
+            <div class="relative w-full sm:w-72">
+                <i class="fas fa-search absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                <input type="text" id="search-input" oninput="searchCerts()" placeholder="Cari judul atau kode kursus..." 
+                    class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 transition-colors">
+            </div>
+        </div>
+
+        <!-- Certificates Grid -->
+        <div id="cert-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Diisi otomatis melalui JavaScript -->
+        </div>
+
+    </main>
+
+    <!-- Modal Preview PDF -->
+    <div id="pdf-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-[#111827] border border-white/10 rounded-2xl max-w-4xl w-full h-[85vh] flex flex-col overflow-hidden shadow-2xl">
+            <div class="px-6 py-4 border-b border-white/10 flex items-center justify-between">
+                <h3 id="modal-title" class="font-bold text-white text-base truncate pr-4">Pratinjau Sertifikat</h3>
+                <button onclick="closeModal()" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-red-500/20 hover:text-red-400 flex items-center justify-center text-gray-400 transition-colors">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="flex-grow bg-gray-900 relative">
+                <iframe id="pdf-frame" src="" class="w-full h-full border-0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-8 mt-16 text-center text-sm text-gray-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>&copy; 2026 Muhammad Thoriq Salahudin Haryoto. Seluruh hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        const certificates = [
+            {
+                title: "Machine Learning Basics",
+                code: "Learning Path",
+                category: "Learning Path",
+                issuer: "IBM Skills Network & Cognitive Class",
+                date: "6 November 2026",
+                featured: true,
+                description: "Menyelesaikan seluruh rangkaian kursus dalam jalur pembelajaran Machine Learning Basics (Regression, KMeans Clustering, Intro to ML, RL & DL Essentials, dan Classification).",
+                verifyUrl: "https://cognitiveclass.ai/certificates/3e57a30f-4acb-4cdb-b977-d33cbba11aa7",
+                pdfFile: "Machine Learning Basics.pdf",
+                certId: "3e57a30f-4acb-4cdb-b977-d33cbba11aa7"
+            },
+            {
+                title: "A Quick Introduction to Machine Learning",
+                code: "ML0104EN",
+                category: "Machine Learning",
+                issuer: "IBM Developer Skills Network",
+                date: "6 November 2026",
+                featured: false,
+                description: "Pengenalan komprehensif mengenai konsep dasar algoritma dan pemodelan Machine Learning.",
+                verifyUrl: "https://courses.cognitiveclass.ai/certificates/ccb9a800cddf4a478fbdf8de212f0926",
+                pdfFile: "A quick introduction to machine learning.pdf",
+                certId: "ccb9a800cddf4a478fbdf8de212f0926"
+            },
+            {
+                title: "Precise Predictions: Classification for Flower and Tumors",
+                code: "GPXX0TRPEN",
+                category: "Machine Learning",
+                issuer: "IBM Developer Skills Network",
+                date: "6 November 2026",
+                featured: false,
+                description: "Penerapan algoritma klasifikasi terawasi untuk prediksi presisi tinggi pada dataset biologis dan medis.",
+                verifyUrl: "https://courses.cognitiveclass.ai/certificates/93b0fe1b6db4417fa4ed88a4746a21f5",
+                pdfFile: "Classification for flower and Tumors.pdf",
+                certId: "93b0fe1b6db4417fa4ed88a4746a21f5"
+            },
+            {
+                title: "Customer Clustering with KMeans to Boost Business Strategy",
+                code: "GPXX0MYYEN",
+                category: "Machine Learning",
+                issuer: "IBM Developer Skills Network",
+                date: "6 November 2026",
+                featured: false,
+                description: "Segmentasi pelanggan menggunakan algoritma Unsupervised Learning K-Means untuk optimalisasi strategi bisnis.",
+                verifyUrl: "https://courses.cognitiveclass.ai/certificates/470b16bde4f4477089d75253700c97b7",
+                pdfFile: "Customer Clustering with Kmeans to Boost Business Straregy.pdf",
+                certId: "470b16bde4f4477089d75253700c97b7"
+            },
+            {
+                title: "Predictions: Regression for Car Mileage and Diamond Price",
+                code: "GPXX0AEIEN",
+                category: "Machine Learning",
+                issuer: "IBM Developer Skills Network",
+                date: "6 November 2026",
+                featured: false,
+                description: "Pemodelan regresi prediktif untuk mengestimasi efisiensi bahan bakar kendaraan dan valuasi harga berlian.",
+                verifyUrl: "https://courses.cognitiveclass.ai/certificates/8e766ddf32274e678fb8a6a37c9047b6",
+                pdfFile: "Regression For Car Mileage and Diamond Price.pdf",
+                certId: "8e766ddf32274e678fb8a6a37c9047b6"
+            },
+            {
+                title: "Data Analysis with Python",
+                code: "DA0101EN",
+                category: "Data Science",
+                issuer: "IBM & Cognitive Class",
+                date: "6 November 2026",
+                featured: false,
+                description: "Analisis data eksploratif, pembersihan data, pemodelan statistik, dan evaluasi model menggunakan pustaka Python.",
+                verifyUrl: "https://courses.cognitiveclass.ai/certificates/19f9030bcb3f4268b8b04fdb0ab2cc50",
+                pdfFile: "Data Analysis With Python.pdf",
+                certId: "19f9030bcb3f4268b8b04fdb0ab2cc50"
+            },
+            {
+                title: "Machine Learning with Python",
+                code: "ML0101EN",
+                category: "Machine Learning",
+                issuer: "IBM & Cognitive Class",
+                date: "2 November 2026",
+                featured: false,
+                description: "Implementasi algoritma regresi, klasifikasi, pengelompokan, dan sistem rekomendasi menggunakan Scikit-Learn.",
+                verifyUrl: "https://courses.cognitiveclass.ai/certificates/2d2edeb5983d407a912c613e279c8b01",
+                pdfFile: "Machine Learning with Python.pdf",
+                certId: "2d2edeb5983d407a912c613e279c8b01"
+            },
+            {
+                title: "Python 101 for Data Science",
+                code: "PY0101EN",
+                category: "Data Science",
+                issuer: "IBM & Cognitive Class",
+                date: "2 November 2026",
+                featured: false,
+                description: "Fundamental pemrograman Python untuk sains data menggunakan struktur data, Pandas, dan NumPy.",
+                verifyUrl: "https://courses.cognitiveclass.ai/certificates/5a95582dbaa147f3a17ce4005f78d614",
+                pdfFile: "Python 101 For Data Science.pdf",
+                certId: "5a95582dbaa147f3a17ce4005f78d614"
+            }
+        ];
+
+        let activeCategory = 'all';
+
+        function renderCerts(data) {
+            const grid = document.getElementById('cert-grid');
+            grid.innerHTML = '';
+
+            data.forEach(cert => {
+                const isFeatured = cert.featured;
+                const cardHTML = `
+                    <div class="glass-card rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden ${isFeatured ? 'md:col-span-2 lg:col-span-3 border-blue-500/40 bg-gradient-to-br from-blue-950/30 to-gray-900/80' : ''}">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-semibold ${isFeatured ? 'featured-badge text-white' : 'bg-blue-500/10 text-blue-400 border border-blue-500/20'}">
+                                    ${cert.code}
+                                </span>
+                                <span class="text-xs text-gray-400 flex items-center gap-1.5">
+                                    <i class="far fa-calendar-alt text-gray-500"></i> ${cert.date}
+                                </span>
+                            </div>
+
+                            <h2 class="text-lg ${isFeatured ? 'sm:text-2xl' : ''} font-bold text-white mb-2 leading-snug">
+                                ${cert.title}
+                            </h2>
+                            <p class="text-xs font-medium text-blue-400 mb-3 flex items-center gap-1.5">
+                                <i class="fas fa-building"></i> ${cert.issuer}
+                            </p>
+                            <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                                ${cert.description}
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="pt-4 border-t border-white/10 flex flex-wrap items-center justify-between gap-3">
+                                <a href="${cert.verifyUrl}" target="_blank" rel="noopener noreferrer" 
+                                    class="flex-1 text-center px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-all flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20">
+                                    <i class="fas fa-check-circle"></i> Verifikasi Resmi
+                                </a>
+                                <button onclick="openModal('${cert.pdfFile}', '${cert.title}')" 
+                                    class="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-gray-200 text-xs font-semibold transition-all flex items-center justify-center gap-2">
+                                    <i class="far fa-file-pdf text-red-400"></i> Lihat PDF
+                                </button>
+                            </div>
+                            <p class="text-[11px] text-gray-500 mt-3 truncate font-mono">
+                                ID: ${cert.certId}
+                            </p>
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += cardHTML;
+            });
+        }
+
+        function filterCerts(category) {
+            activeCategory = category;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.dataset.filter === category) {
+                    btn.className = "filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-blue-600 text-white transition-all";
+                } else {
+                    btn.className = "filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-gray-300 border border-white/10 transition-all";
+                }
+            });
+            applyFilters();
+        }
+
+        function searchCerts() {
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const filtered = certificates.filter(c => {
+                const matchCat = activeCategory === 'all' || c.category === activeCategory;
+                const matchSearch = c.title.toLowerCase().includes(query) || c.code.toLowerCase().includes(query);
+                return matchCat && matchSearch;
+            });
+            renderCerts(filtered);
+        }
+
+        function openModal(pdfPath, title) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('pdf-frame').src = pdfPath;
+            document.getElementById('pdf-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('pdf-modal').classList.add('hidden');
+            document.getElementById('pdf-frame').src = '';
+        }
+
+        // Render awal
+        renderCerts(certificates);
+    </script>
 </body>
 </html>
