@@ -4,382 +4,103 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0D1015">
-<title>Sertifikasi | Muhammad Thoriq Salahudin Haryoto</title>
-<meta name="description" content="Daftar lisensi dan sertifikasi resmi Muhammad Thoriq Salahudin Haryoto di bidang Machine Learning, Data Science, dan Python.">
+<title>Muhammad Thoriq Salahudin Haryoto | Portofolio Mekatronika & Kecerdasan Buatan</title>
+<meta name="description" content="Portofolio pribadi mahasiswa Mekatronika dan Kecerdasan Buatan: robotika, IoT, sistem tertanam, dan desain interaksi.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=4">
-<style>
-  /* Styling tambahan khusus halaman Sertifikasi yang menyatu dengan style.css */
-  .cert-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 14px;
-    margin: 28px 0 36px;
-  }
-  .stat-box {
-    background: rgba(27, 33, 43, 0.55);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
-    padding: 18px 20px;
-    backdrop-filter: blur(8px);
-    transition: border-color 0.25s ease, transform 0.25s ease;
-  }
-  .stat-box:hover {
-    border-color: rgba(79, 185, 255, 0.35);
-    transform: translateY(-2px);
-  }
-  .stat-num {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.85rem;
-    font-weight: 800;
-    color: #FFFFFF;
-    line-height: 1.1;
-    margin-bottom: 6px;
-  }
-  .stat-num.accent { color: #4FB9FF; }
-  .stat-lbl {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.72rem;
-    color: rgba(255, 255, 255, 0.55);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-  }
-
-  /* Toolbar Filter & Pencarian */
-  .cert-toolbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    margin-bottom: 28px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-  .filter-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .f-btn {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
-    padding: 8px 14px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.7);
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  .f-btn:hover {
-    background: rgba(255, 255, 255, 0.08);
-    color: #FFFFFF;
-  }
-  .f-btn.active {
-    background: #2F6BFF;
-    border-color: #4FB9FF;
-    color: #FFFFFF;
-    box-shadow: 0 4px 16px rgba(47, 107, 255, 0.35);
-  }
-  .search-box {
-    position: relative;
-    flex: 1;
-    min-width: 240px;
-    max-width: 320px;
-  }
-  .search-box input {
-    width: 100%;
-    box-sizing: border-box;
-    background: rgba(27, 33, 43, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 8px;
-    padding: 9px 14px;
-    color: #FFFFFF;
-    font-family: 'Figtree', sans-serif;
-    font-size: 0.88rem;
-    outline: none;
-    transition: border-color 0.2s ease;
-  }
-  .search-box input:focus {
-    border-color: #4FB9FF;
-  }
-  .search-box input::placeholder {
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  /* Grid Kartu Sertifikat */
-  .cert-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 20px;
-  }
-  .cert-card {
-    background: rgba(27, 33, 43, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.09);
-    border-radius: 14px;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
-  }
-  .cert-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(79, 185, 255, 0.45);
-    box-shadow: 0 16px 36px -12px rgba(18, 48, 127, 0.5);
-  }
-  .cert-card.featured {
-    grid-column: 1 / -1;
-    background: linear-gradient(135deg, rgba(47, 107, 255, 0.16) 0%, rgba(27, 33, 43, 0.85) 100%);
-    border-color: rgba(79, 185, 255, 0.4);
-  }
-  .cert-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    margin-bottom: 14px;
-  }
-  .cert-badge {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.73rem;
-    font-weight: 500;
-    padding: 4px 10px;
-    border-radius: 6px;
-    background: rgba(47, 107, 255, 0.18);
-    border: 1px solid rgba(79, 185, 255, 0.35);
-    color: #4FB9FF;
-  }
-  .cert-card.featured .cert-badge {
-    background: #2F6BFF;
-    color: #FFFFFF;
-    border-color: #4FB9FF;
-  }
-  .cert-date {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  .cert-title {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #FFFFFF;
-    margin: 0 0 8px 0;
-    line-height: 1.35;
-  }
-  .cert-card.featured .cert-title {
-    font-size: 1.5rem;
-  }
-  .cert-issuer {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.78rem;
-    color: #4FB9FF;
-    margin: 0 0 12px 0;
-  }
-  .cert-desc {
-    font-family: 'Figtree', sans-serif;
-    font-size: 0.92rem;
-    color: rgba(255, 255, 255, 0.72);
-    line-height: 1.6;
-    margin: 0 0 20px 0;
-  }
-  .cert-courses {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 22px;
-  }
-  .course-pill {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.72rem;
-    padding: 5px 10px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.85);
-  }
-  .cert-foot {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding-top: 16px;
-    margin-top: auto;
-  }
-  .cert-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  .cert-actions .b {
-    font-size: 0.82rem;
-    padding: 8px 14px;
-    cursor: pointer;
-  }
-  .cert-id {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.68rem;
-    color: rgba(255, 255, 255, 0.4);
-    word-break: break-all;
-  }
-
-  /* Modal Pratinjau PDF bergaya jendela kode (.win) */
-  .pdf-modal {
-    position: fixed;
-    inset: 0;
-    z-index: 999;
-    background: rgba(13, 16, 21, 0.85);
-    backdrop-filter: blur(8px);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-  .pdf-modal.open {
-    display: flex;
-  }
-  .pdf-win {
-    width: 100%;
-    max-width: 960px;
-    height: 85vh;
-    background: #1B212B;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
-  }
-  .pdf-wh {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 16px;
-    background: #12161E;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  }
-  .pdf-wh-left {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    overflow: hidden;
-  }
-  .pdf-wh-left i {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
-  }
-  .pdf-wh-left i:nth-child(1) { background: #FF5F56; }
-  .pdf-wh-left i:nth-child(2) { background: #FFBD2E; }
-  .pdf-wh-left i:nth-child(3) { background: #27C93F; }
-  .pdf-fn {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.85);
-    margin-left: 8px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .pdf-close {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    color: #FFFFFF;
-    padding: 5px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  .pdf-close:hover {
-    background: rgba(255, 95, 86, 0.25);
-    border-color: #FF5F56;
-  }
-  .pdf-frame {
-    flex: 1;
-    width: 100%;
-    border: 0;
-    background: #0D1015;
-  }
-</style>
 </head>
-<body data-page="sertifikasi" data-title="Sertifikasi & Lisensi Resmi">
+<body data-page="home" data-title="Portofolio Mekatronika & Kecerdasan Buatan">
 <div class="gridlit" id="gridlit" aria-hidden="true"></div>
 <div class="glow" id="glow" aria-hidden="true"></div>
 
 <nav class="nav" id="nav"></nav>
 
 <main>
-  <section class="wrap" id="top">
+  <header class="wrap hero" id="top">
+    <div>
+      <span class="mono">Lembar 00 | Tentang</span>
+      <h1 id="hName">[Nama Kamu]</h1>
+      <p class="tag">Mahasiswa Mekatronika & Kecerdasan Buatan yang suka merancang, dari hardware hingga software.</p>
+      <p class="d">Saya mengerjakan proyek robotika, IoT, sistem tertanam, desain interaksi, dan juga editing. Bagi saya, sebuah rancangan dikatakan sempurna jika berfungsi dengan baik dan tampilannya menarik.</p>
+      <p class="d">Saat ini saya sedang mempelajari lebih lanjut tentang teknologi LoRa Mesh, proyek IoT, dan desain AI.</p>
+      <div class="btns">
+        <a class="b w" href="proyek.html">Lihat proyek</a>
+        <a class="b o" href="#kontak">Kontak</a>
+        <a class="b o" id="cvBtn" href="#" hidden>Unduh CV</a>
+      </div>
+    </div>
+    <div class="frame">
+      <!-- Foto: simpan sebagai foto.jpg -->
+      <div class="pic">NK</div>
+      <span class="dim t">4 : 5</span>
+    </div>
+  </header>
+  <dl class="sr" id="info" aria-label="Ringkasan profil"></dl>
+
+  <section class="wrap" id="demo" style="padding-top:0">
     <div class="sh">
-      <div>
-        <span class="mono">Lembar 03 | Kredensial & Lisensi</span>
-        <h1>Sertifikasi Kompetensi</h1>
-        <p class="sub">Bukti kelulusan kurikulum Machine Learning, Data Science, dan pemrograman Python dari IBM Developer Skills Network & Cognitive Class.</p>
-      </div>
+      <div><span class="mono">Lembar 01 | Demo</span><h2>Ilustrasi Dobot</h2>
+      <p class="sub">Ilustrasi Dobot dengan kode program yang berjalan</p></div>
       <div class="acts">
-        <a class="b o" href="index.html">← Kembali ke Beranda</a>
+        <button class="b o" type="button" data-m="write">Putar ulang</button>
       </div>
     </div>
-
-    <!-- Ringkasan Statistik -->
-    <div class="cert-stats" aria-label="Statistik sertifikasi">
-      <div class="stat-box">
-        <div class="stat-num accent">08</div>
-        <div class="stat-lbl">Total Sertifikat</div>
+    <div class="demo">
+      <div class="scene">
+        <svg id="sc" viewBox="0 -32 640 372" role="img" aria-label="Animasi Dobot putih-biru di bagian atas yang menurunkan pena dan menulis ringkasan profil pada papan berisi enam kotak">
+          <defs id="df"><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="rgba(255,255,255,.08)"/></pattern><linearGradient id="bw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D9E4F8"/></linearGradient><linearGradient id="aw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE6F8"/></linearGradient></defs>
+          <rect y="-32" width="640" height="332" fill="url(#dots)"/>
+          <rect y="300" width="640" height="40" fill="#1B212B"/>
+          <line x1="0" y1="300" x2="640" y2="300" stroke="rgba(255,255,255,.28)"/>
+          <!-- papan 3 x 2 -->
+          <rect x="24" y="124" width="592" height="176" rx="8" fill="#F6F9FF" stroke="#CFE0FF" stroke-width="2"/>
+          <path d="M221.3 130V294M418.7 130V294M30 212H610" stroke="#C3D1EC" stroke-width="1.5" fill="none"/>
+          <g id="board"></g>
+          <!-- Dobot -->
+          <rect x="14" y="-6" width="612" height="8" rx="4" fill="#2A3140" stroke="rgba(255,255,255,.18)"/>
+          <g id="bd">
+            <rect x="-60" y="2" width="120" height="10" rx="3" fill="#1B1F2A"/>
+            <rect x="-62" y="10" width="124" height="44" rx="9" fill="url(#bw)" stroke="#BFD5FF" stroke-width="1.5"/>
+            <rect x="-62" y="44" width="124" height="3" fill="#2F6BFF" opacity=".85"/>
+            <circle cx="0" cy="27" r="4" fill="#4FB9FF"/><circle cx="0" cy="27" r="9" fill="#4FB9FF" opacity=".22"/>
+            <path d="M-26 54 H26 V66 Q26 74 18 74 H-18 Q-26 74 -26 66 Z" fill="#E6EEFF" stroke="#BFD5FF" stroke-width="1.5"/>
+          </g>
+          <g id="arm">
+            <line id="a1o" stroke="#AFC4EE" stroke-width="28" stroke-linecap="round"/>
+            <line id="a1w" stroke="url(#aw)" stroke-width="24" stroke-linecap="round"/>
+            <line id="a1k" stroke="#1B1F2A" stroke-width="9" stroke-linecap="round"/>
+            <line id="a2o" stroke="#AFC4EE" stroke-width="26" stroke-linecap="round"/>
+            <line id="a2w" stroke="url(#aw)" stroke-width="22" stroke-linecap="round"/>
+            <line id="a2k" stroke="#1B1F2A" stroke-width="8" stroke-linecap="round"/>
+            <g id="h0"><circle r="15" fill="#1B1F2A" stroke="#F4F8FF" stroke-width="3"/><circle r="5" fill="#2F6BFF"/></g>
+            <g id="h1"><circle r="13" fill="#1B1F2A" stroke="#F4F8FF" stroke-width="3"/><circle r="4.5" fill="#2F6BFF"/></g>
+          </g>
+          <g id="tl">
+            <circle r="9" fill="#1B1F2A" stroke="#F4F8FF" stroke-width="2.5"/>
+            <rect x="-8" y="6" width="16" height="9" rx="2.5" fill="#1B1F2A"/>
+            <rect x="-5" y="13" width="10" height="3" fill="#F4F8FF"/>
+            <line x1="0" y1="15" x2="0" y2="19" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+            <path d="M-3 19 L3 19 L0 26 Z" fill="#12307F"/>
+          </g>
+        </svg>
       </div>
-      <div class="stat-box">
-        <div class="stat-num">01</div>
-        <div class="stat-lbl">Learning Path</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">IBM</div>
-        <div class="stat-lbl">Skills Network</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">2026</div>
-        <div class="stat-lbl">Tahun Terbit</div>
+      <div class="win">
+        <div class="wh"><i></i><i></i><i></i><span id="fn">dobot_tulis.py</span></div>
+        <pre class="src" id="src" aria-label="Contoh program Dobot"></pre>
+        <div class="logh">TERMINAL</div>
+        <div class="log" id="lg"></div>
       </div>
     </div>
+  </section>
 
-    <!-- Filter Kategori & Pencarian -->
-    <div class="cert-toolbar">
-      <div class="filter-group" role="tablist" aria-label="Filter kategori sertifikat">
-        <button class="f-btn active" type="button" data-filter="all">Semua [08]</button>
-        <button class="f-btn" type="button" data-filter="Learning Path">Learning Path [01]</button>
-        <button class="f-btn" type="button" data-filter="Machine Learning">Machine Learning [05]</button>
-        <button class="f-btn" type="button" data-filter="Data Science">Data Science & Python [02]</button>
-      </div>
-      <div class="search-box">
-        <input type="search" id="certSearch" placeholder="Cari judul atau kode (mis. ML0101EN)..." aria-label="Cari sertifikat">
-      </div>
-    </div>
-
-    <!-- Daftar Sertifikat -->
-    <div class="cert-grid" id="certGrid"></div>
+  <section class="wrap" id="jelajah">
+    <span class="mono">Jelajahi</span>
+    <h2 style="margin-bottom:24px">Lihat lebih lanjut</h2>
+    <div class="tzs" id="tz"></div>
   </section>
 </main>
-
-<!-- Modal Pratinjau Dokumen PDF -->
-<div class="pdf-modal" id="pdfModal" role="dialog" aria-modal="true" aria-labelledby="pdfTitle">
-  <div class="pdf-win">
-    <div class="pdf-wh">
-      <div class="pdf-wh-left">
-        <i></i><i></i><i></i>
-        <span class="pdf-fn" id="pdfTitle">sertifikat.pdf</span>
-      </div>
-      <button class="pdf-close" type="button" id="pdfClose">Tutup [ESC]</button>
-    </div>
-    <iframe class="pdf-frame" id="pdfFrame" src="" title="Pratinjau PDF Sertifikat"></iframe>
-  </div>
-</div>
 
 <div class="band" id="kontak"></div>
 <footer id="foot"></footer>
@@ -388,203 +109,5 @@
 
 <script src="data.js?v=3"></script>
 <script src="app.js?v=4"></script>
-<script>
-(function() {
-  const CERTS = [
-    {
-      title: "Machine Learning Basics",
-      code: "LEARNING PATH",
-      category: "Learning Path",
-      issuer: "IBM Skills Network · Cognitive Class",
-      date: "06 Nov 2026",
-      featured: true,
-      desc: "Menyelesaikan seluruh rangkaian kurikulum Machine Learning Basics yang mencakup pemodelan regresi, klasterisasi K-Means, klasifikasi medis/biologis, serta dasar Reinforcement & Deep Learning.",
-      courses: [
-        "Regression for Car Mileage & Diamond Price",
-        "Customer Clustering with KMeans",
-        "A Quick Introduction to Machine Learning",
-        "Reinforcement Learning & Deep Learning Essentials",
-        "Classification for Flower and Tumors"
-      ],
-      verifyUrl: "https://cognitiveclass.ai/certificates/3e57a30f-4acb-4cdb-b977-d33cbba11aa7",
-      pdfFile: "Machine Learning Basics.pdf",
-      certId: "3e57a30f-4acb-4cdb-b977-d33cbba11aa7"
-    },
-    {
-      title: "A Quick Introduction to Machine Learning",
-      code: "ML0104EN",
-      category: "Machine Learning",
-      issuer: "IBM Developer Skills Network",
-      date: "06 Nov 2026",
-      featured: false,
-      desc: "Pengenalan komprehensif mengenai arsitektur dasar, alur kerja pelatihan model, dan taksonomi algoritma Machine Learning.",
-      verifyUrl: "https://courses.cognitiveclass.ai/certificates/ccb9a800cddf4a478fbdf8de212f0926",
-      pdfFile: "A quick introduction to machine learning.pdf",
-      certId: "ccb9a800cddf4a478fbdf8de212f0926"
-    },
-    {
-      title: "Precise Predictions: Classification for Flower and Tumors",
-      code: "GPXX0TRPEN",
-      category: "Machine Learning",
-      issuer: "IBM Developer Skills Network",
-      date: "06 Nov 2026",
-      featured: false,
-      desc: "Penerapan algoritma klasifikasi terawasi (Supervised Learning) untuk prediksi presisi pada dataset spesies bunga dan deteksi tumor.",
-      verifyUrl: "https://courses.cognitiveclass.ai/certificates/93b0fe1b6db4417fa4ed88a4746a21f5",
-      pdfFile: "Classification for flower and Tumors.pdf",
-      certId: "93b0fe1b6db4417fa4ed88a4746a21f5"
-    },
-    {
-      title: "Customer Clustering with KMeans to Boost Business Strategy",
-      code: "GPXX0MYYEN",
-      category: "Machine Learning",
-      issuer: "IBM Developer Skills Network",
-      date: "06 Nov 2026",
-      featured: false,
-      desc: "Segmentasi perilaku pelanggan menggunakan algoritma Unsupervised Learning K-Means untuk mendukung pengambilan keputusan bisnis.",
-      verifyUrl: "https://courses.cognitiveclass.ai/certificates/470b16bde4f4477089d75253700c97b7",
-      pdfFile: "Customer Clustering with Kmeans to Boost Business Straregy.pdf",
-      certId: "470b16bde4f4477089d75253700c97b7"
-    },
-    {
-      title: "Predictions: Regression for Car Mileage and Diamond Price",
-      code: "GPXX0AEIEN",
-      category: "Machine Learning",
-      issuer: "IBM Developer Skills Network",
-      date: "06 Nov 2026",
-      featured: false,
-      desc: "Pemodelan regresi prediktif untuk mengestimasi efisiensi konsumsi bahan bakar kendaraan dan valuasi harga berlian.",
-      verifyUrl: "https://courses.cognitiveclass.ai/certificates/8e766ddf32274e678fb8a6a37c9047b6",
-      pdfFile: "Regression For Car Mileage and Diamond Price.pdf",
-      certId: "8e766ddf32274e678fb8a6a37c9047b6"
-    },
-    {
-      title: "Data Analysis with Python",
-      code: "DA0101EN",
-      category: "Data Science",
-      issuer: "IBM · Cognitive Class",
-      date: "06 Nov 2026",
-      featured: false,
-      desc: "Eksplorasi data (EDA), pembersihan dataset, pemodelan regresi linier/polinomial, dan evaluasi pipeline statistik menggunakan Python.",
-      verifyUrl: "https://courses.cognitiveclass.ai/certificates/19f9030bcb3f4268b8b04fdb0ab2cc50",
-      pdfFile: "Data Analysis With Python.pdf",
-      certId: "19f9030bcb3f4268b8b04fdb0ab2cc50"
-    },
-    {
-      title: "Machine Learning with Python",
-      code: "ML0101EN",
-      category: "Machine Learning",
-      issuer: "IBM · Cognitive Class",
-      date: "02 Nov 2026",
-      featured: false,
-      desc: "Implementasi algoritma regresi, klasifikasi (KNN, Decision Trees, SVM), klasterisasi, dan sistem rekomendasi dengan Scikit-Learn.",
-      verifyUrl: "https://courses.cognitiveclass.ai/certificates/2d2edeb5983d407a912c613e279c8b01",
-      pdfFile: "Machine Learning with Python.pdf",
-      certId: "2d2edeb5983d407a912c613e279c8b01"
-    },
-    {
-      title: "Python 101 for Data Science",
-      code: "PY0101EN",
-      category: "Data Science",
-      issuer: "IBM · Cognitive Class",
-      date: "02 Nov 2026",
-      featured: false,
-      desc: "Fundamental pemrograman Python untuk sains data yang mencakup struktur data, fungsi, manipulasi berkas, serta komputasi NumPy dan Pandas.",
-      verifyUrl: "https://courses.cognitiveclass.ai/certificates/5a95582dbaa147f3a17ce4005f78d614",
-      pdfFile: "Python 101 For Data Science.pdf",
-      certId: "5a95582dbaa147f3a17ce4005f78d614"
-    }
-  ];
-
-  const grid = document.getElementById('certGrid');
-  const searchInput = document.getElementById('certSearch');
-  const filterBtns = document.querySelectorAll('.f-btn');
-  const modal = document.getElementById('pdfModal');
-  const pdfFrame = document.getElementById('pdfFrame');
-  const pdfTitle = document.getElementById('pdfTitle');
-  const pdfClose = document.getElementById('pdfClose');
-
-  let currentFilter = 'all';
-
-  function renderCards() {
-    const q = searchInput.value.trim().toLowerCase();
-    const filtered = CERTS.filter(c => {
-      const matchCat = currentFilter === 'all' || c.category === currentFilter;
-      const matchText = c.title.toLowerCase().includes(q) ||
-                        c.code.toLowerCase().includes(q) ||
-                        c.desc.toLowerCase().includes(q);
-      return matchCat && matchText;
-    });
-
-    if (!filtered.length) {
-      grid.innerHTML = `<p class="sub" style="grid-column: 1/-1; text-align:center; padding: 40px 0;">Tidak ada sertifikat yang cocok dengan pencarian Anda.</p>`;
-      return;
-    }
-
-    grid.innerHTML = filtered.map(c => {
-      const pillsHTML = c.courses
-        ? `<div class="cert-courses">${c.courses.map(item => `<span class="course-pill">${item}</span>`).join('')}</div>`
-        : '';
-
-      return `
-        <article class="cert-card ${c.featured ? 'featured' : ''}">
-          <div>
-            <div class="cert-top">
-              <span class="cert-badge">${c.code}</span>
-              <span class="cert-date">${c.date}</span>
-            </div>
-            <h2 class="cert-title">${c.title}</h2>
-            <p class="cert-issuer">${c.issuer}</p>
-            <p class="cert-desc">${c.desc}</p>
-            ${pillsHTML}
-          </div>
-          <div class="cert-foot">
-            <div class="cert-actions">
-              <a class="b w" href="${c.verifyUrl}" target="_blank" rel="noopener noreferrer">Verifikasi Kredensial ↗</a>
-              <button class="b o preview-btn" type="button" data-pdf="${c.pdfFile}" data-title="${c.pdfFile}">Buka PDF</button>
-              <a class="b o" href="${c.pdfFile}" download>Unduh</a>
-            </div>
-            <div class="cert-id">ID: ${c.certId}</div>
-          </div>
-        </article>
-      `;
-    }).join('');
-
-    document.querySelectorAll('.preview-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        pdfTitle.textContent = btn.dataset.title;
-        pdfFrame.src = encodeURI(btn.dataset.pdf);
-        modal.classList.add('open');
-      });
-    });
-  }
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentFilter = btn.dataset.filter;
-      renderCards();
-    });
-  });
-
-  searchInput.addEventListener('input', renderCards);
-
-  function closeModal() {
-    modal.classList.remove('open');
-    pdfFrame.src = '';
-  }
-
-  pdfClose.addEventListener('click', closeModal);
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) closeModal();
-  });
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
-  });
-
-  renderCards();
-})();
-</script>
 </body>
 </html>
