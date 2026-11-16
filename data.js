@@ -9,7 +9,7 @@ var SITE = {
   kontakTeks:  'Terbuka untuk kolaborasi, proyek, dan kesempatan baru.',
   soc: [
     ['GitHub',    'https://github.com/Felixriq'],
-    ['LinkedIn',  'https://www.linkedin.com/in/muhammad-thoriq-salahudin-haryoto/'],
+    ['LinkedIn',  'https://www.linkedin.com/in/muhammad-thoriq-salahudin-haryoto-093245329/'],
     ['Instagram', 'https://instagram.com/thoriqharyoto_']
   ]
 };
