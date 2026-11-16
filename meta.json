@@ -1,0 +1,146 @@
+{
+  "jarak": {
+    "Balikpapan": {
+      "min": 1176.0,
+      "max": 1678.0,
+      "median": 1400.0
+    },
+    "Bekasi": {
+      "min": 110.0,
+      "max": 151.0,
+      "median": 130.0
+    },
+    "Bogor": {
+      "min": 104.0,
+      "max": 146.0,
+      "median": 125.0
+    },
+    "Cirebon": {
+      "min": 102.0,
+      "max": 152.0,
+      "median": 130.0
+    },
+    "Denpasar": {
+      "min": 879.0,
+      "max": 1248.0,
+      "median": 1080.0
+    },
+    "Jakarta": {
+      "min": 121.0,
+      "max": 179.0,
+      "median": 150.0
+    },
+    "Makassar": {
+      "min": 1221.0,
+      "max": 1769.0,
+      "median": 1498.5
+    },
+    "Malang": {
+      "min": 609.0,
+      "max": 851.0,
+      "median": 720.0
+    },
+    "Medan": {
+      "min": 1600.0,
+      "max": 2194.0,
+      "median": 1899.0
+    },
+    "Palembang": {
+      "min": 717.0,
+      "max": 997.0,
+      "median": 860.0
+    },
+    "Pontianak": {
+      "min": 764.0,
+      "max": 1043.0,
+      "median": 900.0
+    },
+    "Semarang": {
+      "min": 287.0,
+      "max": 436.0,
+      "median": 370.0
+    },
+    "Surabaya": {
+      "min": 564.0,
+      "max": 811.0,
+      "median": 691.0
+    },
+    "Tasikmalaya": {
+      "min": 90.0,
+      "max": 128.0,
+      "median": 110.0
+    },
+    "Yogyakarta": {
+      "min": 328.0,
+      "max": 454.0,
+      "median": 390.0
+    }
+  },
+  "transit": {
+    "Balikpapan": {
+      "min": 4,
+      "max": 5
+    },
+    "Bekasi": {
+      "min": 1,
+      "max": 2
+    },
+    "Bogor": {
+      "min": 1,
+      "max": 2
+    },
+    "Cirebon": {
+      "min": 1,
+      "max": 2
+    },
+    "Denpasar": {
+      "min": 3,
+      "max": 4
+    },
+    "Jakarta": {
+      "min": 1,
+      "max": 2
+    },
+    "Makassar": {
+      "min": 4,
+      "max": 5
+    },
+    "Malang": {
+      "min": 3,
+      "max": 4
+    },
+    "Medan": {
+      "min": 4,
+      "max": 5
+    },
+    "Palembang": {
+      "min": 3,
+      "max": 4
+    },
+    "Pontianak": {
+      "min": 3,
+      "max": 4
+    },
+    "Semarang": {
+      "min": 2,
+      "max": 3
+    },
+    "Surabaya": {
+      "min": 2,
+      "max": 3
+    },
+    "Tasikmalaya": {
+      "min": 1,
+      "max": 2
+    },
+    "Yogyakarta": {
+      "min": 2,
+      "max": 3
+    }
+  },
+  "berat_median": 1.34,
+  "berat_max": 44.06,
+  "vol_min": 2861,
+  "vol_max": 17979,
+  "vol_median": 5357.5
+}
